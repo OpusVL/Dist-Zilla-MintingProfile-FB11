@@ -21,7 +21,7 @@ $mech->content_like(qr/FB11 TestApp/i, 'see if it has our text');
 $mech->content_like(qr/Access denied/i, 'check not logged in');
 $mech->submit_form(form_number => 1,
     fields => {
-        username => 'appkitadmin',
+        username => 'fb11admin',
         password => 'password',
         remember => 'remember',
     },

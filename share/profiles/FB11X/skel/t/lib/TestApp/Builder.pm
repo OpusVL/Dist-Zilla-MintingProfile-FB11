@@ -27,7 +27,7 @@ override _build_config => sub {
     {
         schema_class => 'OpusVL::FB11::Schema::FB11AuthDB',
         connect_info => [
-          'dbi:SQLite:' . TestApp->path_to('root','appkit-auth.db'),
+          'dbi:SQLite:' . TestApp->path_to('root','fb11-auth.db'),
         ],
     };
 
