@@ -1,5 +1,9 @@
 {{ $NEXT }}
 
+0.004     2015-11-11 15:27:42+00:00 Europe/London
+
+    - Declared a missing dependency
+
 0.003     2015-10-22 13:16:43+01:00 Europe/London
     
     - No longer extend from the HTML::FormFu base controller
