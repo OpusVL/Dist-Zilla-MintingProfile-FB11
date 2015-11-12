@@ -3,6 +3,7 @@
 use strict;
 use warnings;
 use Test::More;
+use Mojo::Dom;
 
 # setup library path
 use FindBin qw($Bin);
@@ -26,7 +27,16 @@ $mech->submit_form(form_number => 1,
         remember => 'remember',
     },
 );
-$mech->content_like(qr/Welcome to/i, 'Check login good');
+
+sub get_dom {
+    my ($mech) = @_;
+    Mojo::DOM->new($mech->content)
+}
+
+do {
+    ok( my $main_content = get_dom($mech)->at('.fb11-main-content') );
+    like($main_content->at('h1')->all_text, qr/Welcome to TestApp/i, 'Looks like we logged in OK');
+};
 
 
 done_testing;
