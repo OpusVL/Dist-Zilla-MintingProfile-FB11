@@ -1,5 +1,11 @@
 {{ $NEXT }}
 
+0.005     2015-11-12 12:49:44+00:00 Europe/London
+
+    - The FB11X profile now generates a component whose tests pass
+    - The FB11X profile now generates a component without binary .db files in the repo
+    - The FB11X profile now initialises the git repository after minting
+
 0.004     2015-11-11 15:27:42+00:00 Europe/London
 
     - Declared a missing dependency
