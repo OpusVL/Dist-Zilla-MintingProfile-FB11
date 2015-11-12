@@ -20,13 +20,13 @@ $mech->get_ok('http://localhost/', 'get main page');
 $mech->content_like(qr/TestApp/i, 'see if it has our text');
 
 $mech->content_like(qr/Access denied/i, 'check not logged in');
-$mech->submit_form(form_number => 1,
-    fields => {
+$mech->submit_form_ok({
+    with_fields => {
         username => 'fb11admin',
         password => 'password',
         remember => 'remember',
     },
-);
+}, "Submit login form");
 
 sub get_dom {
     my ($mech) = @_;
