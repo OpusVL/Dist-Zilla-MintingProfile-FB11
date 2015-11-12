@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 use Test::More;
-use Mojo::Dom;
+use Mojo::DOM;
 
 # setup library path
 use FindBin qw($Bin);
