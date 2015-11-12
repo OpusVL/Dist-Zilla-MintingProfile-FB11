@@ -10,7 +10,7 @@ my $builder = TestApp::Builder->new(
 $builder->bootstrap;
 
 TestApp->model('FB11AuthDB')->schema->deploy({add_drop_table => 1});
-TestApp->model('FB11AuthDB::User')->create({
+TestApp->model('FB11AuthDB::User')->create({ 
     username => 'fb11admin',
     password => 'password',
     email => 'support@opusvl.com',

@@ -16,7 +16,7 @@ use Test::WWW::Mechanize::Catalyst 'TestApp';
 my $mech = Test::WWW::Mechanize::Catalyst->new;
 
 $mech->get_ok('http://localhost/', 'get main page');
-$mech->content_like(qr/FB11 TestApp/i, 'see if it has our text');
+$mech->content_like(qr/TestApp/i, 'see if it has our text');
 
 $mech->content_like(qr/Access denied/i, 'check not logged in');
 $mech->submit_form(form_number => 1,
@@ -26,7 +26,7 @@ $mech->submit_form(form_number => 1,
         remember => 'remember',
     },
 );
-$mech->content_like(qr/Welcome to FB11 TestApp/i, 'Check login good');
+$mech->content_like(qr/Welcome to/i, 'Check login good');
 
 
 done_testing;
