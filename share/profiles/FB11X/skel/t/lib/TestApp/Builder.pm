@@ -29,14 +29,16 @@ override _build_config => sub {
     $PSQL = Test::PostgreSQL->new
         or die $Test::PostgreSQL::errstr;
 
-    # point the FB11Auth Model to the correct DB file....
-    $config->{'Model::FB11AuthDB'} = 
-    {
-        schema_class => 'OpusVL::FB11::Schema::FB11AuthDB',
-        connect_info => [
-            $PSQL->dsn
-        ],
-    };
+    # Point the models to the correct DB files
+    my %models = (
+        'Model::FB11AuthDB' => 'OpusVL::FB11::Schema::FB11AuthDB',
+    );
+    while (my ($model, $schema_class) = each %models) {
+        $config->{$model} = {
+            schema_class => $schema_class,
+            connect_info => [ $PSQL->dsn ],
+        };
+    }
 
     # .. add static dir into the config for Static::Simple..
     my $static_dirs = $config->{static}->{include_path};
