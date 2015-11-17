@@ -41,9 +41,12 @@ override _build_config => sub {
     }
 
     # .. add static dir into the config for Static::Simple..
-    my $static_dirs = $config->{static}->{include_path};
-    unshift(@$static_dirs, TestApp->path_to('root'));
-    $config->{static}->{include_path} = $static_dirs;
+    {
+        my $static_simple_conf = $config->{'Plugin::Static::Simple'};
+        my $static_dirs = $static_simple_conf->{include_path};
+        unshift(@$static_dirs, TestApp->path_to('root'));
+        $static_simple_conf->{include_path} = $static_dirs;
+    }
     
     # .. allow access regardless of ACL rules...
     $config->{'fb11_can_access_actionpaths'} = ['custom/custom'];
