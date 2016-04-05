@@ -1,5 +1,14 @@
 {{ $NEXT }}
 
+0.006     2016-04-05 15:46:41+01:00 Europe/London
+
+    - Remove use of experimental copy parameter to GenerateFile
+    - Remove sqlite stuff
+    - Fixed missing lib directory
+    - Fix compilation issues
+    - Correct Plugin::Static::Simple configuration
+    - Add cpanfile
+
 0.005     2015-11-12 12:49:44+00:00 Europe/London
 
     - The FB11X profile now generates a component whose tests pass
