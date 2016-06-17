@@ -3,7 +3,7 @@ requires 'CatalystX::AppBuilder';
 requires 'Moose';
 requires 'OpusVL::FB11';
 requires 'CatalystX::InjectComponent';
-requiers 'File::ShareDir';
+requires 'File::ShareDir';
 
 requires perl => '5.020';
 
