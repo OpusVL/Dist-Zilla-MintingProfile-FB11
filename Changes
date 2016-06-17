@@ -1,5 +1,10 @@
 {{ $NEXT }}
 
+0.007     2016-06-17 16:02:05+01:00 Europe/London
+
+    - Fix spelling errors in generated cpanfiles (requiers -> requires)
+    - Fix minted git URL to be an ssh://git/ URL instead of scp-style git:/
+
 0.006     2016-04-05 15:46:41+01:00 Europe/London
 
     - Remove use of experimental copy parameter to GenerateFile
