@@ -17,7 +17,7 @@ around profile_dir => sub
 
     $profile_name ||= 'default';
 
-    say and return $_ for $self->$orig($profile_name);
+    return $self->$orig($profile_name);
 };
 
 __PACKAGE__->meta->make_immutable;
