@@ -1,5 +1,9 @@
 {{ $NEXT }}
 
+    - Using "legacy" lib/auto type of sharedir, so it can be found during
+      development
+    - Therefore using ShareDir minting profile that came with DZil
+
 0.007     2016-06-17 16:02:05+01:00 Europe/London
 
     - Fix spelling errors in generated cpanfiles (requiers -> requires)
