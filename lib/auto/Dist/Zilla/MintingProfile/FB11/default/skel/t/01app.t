@@ -5,6 +5,8 @@ use Test::More;
 
 use Catalyst::Test '{{ $dist->name =~ s/-/::/gr }}';
 
-ok( request('/')->is_success, 'Request should succeed' );
+{{ $dist->name =~ s/-/::/gr }}->model('FB11AuthDB')->schema->deploy({add_drop_table => 1});
+
+ok( request('/login')->is_success, 'Request should succeed' );
 
 done_testing();
