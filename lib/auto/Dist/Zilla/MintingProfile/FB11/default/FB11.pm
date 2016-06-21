@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use {{ $name }}::Builder;
 
-our $VERSION = "0.001";
+our $VERSION = '0.009';
 
 my $builder = {{ $name }}::Builder->new(
     appname => __PACKAGE__,

@@ -6,7 +6,7 @@ use namespace::autoclean;
 
 with 'OpusVL::FB11::RolesFor::Plugin';
 
-our $VERSION = '0.01';
+our $VERSION = '0.009';
 {{ 
     ($controller) = ($name =~ /::([^:]+)$/); ''
 }}
