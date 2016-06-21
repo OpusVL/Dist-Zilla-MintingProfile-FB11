@@ -6,3 +6,8 @@ requires 'CatalystX::InjectComponent';
 requires 'File::ShareDir';
 
 requires perl => '5.020';
+
+on 'test'  => sub {
+    requires "Catalyst::Test";
+    requires 'Test::Most';
+};
