@@ -1,5 +1,7 @@
 {{ $NEXT }}
 
+0.008     2016-06-21 14:19:36+01:00 Europe/London
+    - Tests now pass on a newly-minted FB11 app (default profile)
     - Using "legacy" lib/auto type of sharedir, so it can be found during
       development
     - Therefore using ShareDir minting profile that came with DZil
