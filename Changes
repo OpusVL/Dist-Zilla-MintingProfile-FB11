@@ -1,5 +1,9 @@
 {{ $NEXT }}
 
+0.009     2016-06-22 13:23:37+01:00 Europe/London
+    - Tests now pass on a newly-minted FB11X component (FB11X profile)
+    - We now have a test script to check FB11X minting succeeds
+
 0.008     2016-06-21 14:19:36+01:00 Europe/London
     - Tests now pass on a newly-minted FB11 app (default profile)
     - Using "legacy" lib/auto type of sharedir, so it can be found during
