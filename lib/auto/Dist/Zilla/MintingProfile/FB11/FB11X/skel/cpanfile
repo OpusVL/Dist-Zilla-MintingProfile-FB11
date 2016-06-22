@@ -4,6 +4,7 @@ requires 'Moose';
 requires 'OpusVL::FB11';
 requires 'CatalystX::InjectComponent';
 requires 'File::ShareDir';
+requires 'DateTime::Format::Pg';
 
 requires perl => '5.020';
 
