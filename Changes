@@ -1,5 +1,9 @@
 {{ $NEXT }}
 
+0.010     2016-06-25 13:46:14+01:00 Europe/London
+
+    - Removed unnecessary dependencies.
+
 0.009     2016-06-22 13:23:37+01:00 Europe/London
     - Tests now pass on a newly-minted FB11X component (FB11X profile)
     - We now have a test script to check FB11X minting succeeds
