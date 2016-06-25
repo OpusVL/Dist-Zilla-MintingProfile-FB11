@@ -9,4 +9,7 @@ on 'test' => sub {
     requires 'Cwd';
     requires 'autodie';
     requires 'strictures';
+    requires 'Path::Tiny';
+    requires 'Config';
+    requires 'FindBin';
 };
