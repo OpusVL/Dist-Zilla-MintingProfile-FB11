@@ -36,7 +36,7 @@ fb11_method_group         => '{{ $basename }}',
 #    :FB11Feature('Read {{ $basename }}')
 #    :NavigationName('{{ $basename }} List')
 #($self, $c) {
-#    $c->stash({{lc $basename}}s => [$c->model('{{$bits[-1]}}DB::{{ $basename }}')->all]);
+#    $c->stash({{lc $basename}}s => [$c->model('{{$bits[0]}}DB::{{ $basename }}')->all]);
 #}
 
 1;
