@@ -1,5 +1,8 @@
 {{ $NEXT }}
 
+0.011     2016-06-27 12:12:21+01:00 Europe/London
+    - Added minting profile for Form
+
 0.010     2016-06-25 13:46:14+01:00 Europe/London
 
     - Removed unnecessary dependencies.
