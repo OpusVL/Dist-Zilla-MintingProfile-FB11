@@ -38,3 +38,16 @@ Mints a new form (use with C<dzil add>)
 
     cd MyApp-FB11X-ComponentName
     dzil add -P FB11 -p Form MyApp::FB11X::ComponentName::Form::EntityName
+
+
+=head2 Controller
+
+Mints a new controller (use with C<dzil add>)
+
+    cd MyApp-FB11X-ComponentName
+    dzil add -P FB11 -p Form MyApp::FB11X::ComponentName::Controller::EntityName
+
+
+The templates will need to be created in the directory:
+
+    lib/auto/MyApp/FB11X/ComponentName/root/templates/entityname/*.tt
