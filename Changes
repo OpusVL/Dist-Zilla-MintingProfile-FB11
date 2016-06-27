@@ -1,5 +1,8 @@
 {{ $NEXT }}
 
+0.014     2016-06-27 15:27:30+01:00 Europe/London
+    - Fix warnings in minted Controller by moving 'no warnings'
+
 0.013     2016-06-27 14:52:10+01:00 Europe/London
     - Add minting profile for Controller
 
