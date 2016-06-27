@@ -5,9 +5,9 @@ use v5.20;
 use strict;
 use warnings;
 use feature 'signatures';
-no warnings 'experimental::signatures';
 use Moose;
 use namespace::autoclean;
+no warnings 'experimental::signatures';
 
 BEGIN { extends 'Catalyst::Controller'; };
 with 'OpusVL::FB11::RolesFor::Controller::GUI';
