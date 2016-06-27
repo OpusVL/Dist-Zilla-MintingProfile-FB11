@@ -2,6 +2,7 @@ package {{ $name }};
 
 use OpusVL::FB11::Plugin::FormHandler;
 #with 'HTML::FormHandler::TraitFor::Model::DBIC';
+with 'OpusVL::FB11::RolesFor::Form::Parsley';
 
 #use HTML::FormHandler::Types qw/Collapse Trim/;
 
