@@ -2,10 +2,12 @@ package {{ $name }};
 {{ @bits = split(/::/, $name); $basename = $bits[-1] ; ''
 }}
 use v5.20;
+use strict;
+use warnings;
 use Moose;
 use namespace::autoclean;
-#use feature 'signatures';
-#no warnings 'experimental::signatures';
+use feature 'signatures';
+no warnings 'experimental::signatures';
 
 BEGIN { extends 'Catalyst::Controller'; };
 with 'OpusVL::FB11::RolesFor::Controller::GUI';
