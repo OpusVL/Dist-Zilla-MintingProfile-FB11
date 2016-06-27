@@ -4,10 +4,8 @@ package {{ $name }};
 use v5.20;
 use strict;
 use warnings;
-use feature 'signatures';
 use Moose;
 use namespace::autoclean;
-no warnings 'experimental::signatures';
 
 BEGIN { extends 'Catalyst::Controller'; };
 with 'OpusVL::FB11::RolesFor::Controller::GUI';
@@ -35,7 +33,8 @@ fb11_method_group         => '{{ $basename }}',
 #    :Local
 #    :FB11Feature('Read {{ $basename }}')
 #    :NavigationName('{{ $basename }} List')
-#($self, $c) {
+#{
+#    my ($self, $c) = @_;
 #    $c->stash({{lc $basename}}s => [$c->model('{{$bits[0]}}DB::{{ $basename }}')->all]);
 #}
 
