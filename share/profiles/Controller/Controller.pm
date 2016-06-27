@@ -4,10 +4,10 @@ package {{ $name }};
 use v5.20;
 use strict;
 use warnings;
-use Moose;
-use namespace::autoclean;
 use feature 'signatures';
 no warnings 'experimental::signatures';
+use Moose;
+use namespace::autoclean;
 
 BEGIN { extends 'Catalyst::Controller'; };
 with 'OpusVL::FB11::RolesFor::Controller::GUI';
