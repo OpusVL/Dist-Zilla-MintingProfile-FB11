@@ -48,4 +48,4 @@ fb11_method_group         => '{{ $basename }}',
 
 =head1 METHODS
 
-
+# =head2 index
