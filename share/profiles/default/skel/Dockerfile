@@ -1,5 +1,5 @@
 FROM quay.io/opusvl/fb11
-MAINTAINER {{ $dist->copyright_holder }}
+MAINTAINER {{ $dist->authors->[0] }}
 
 ARG version
 RUN if [ -z "$version" ]; then echo "No version specified"; exit 1; fi
