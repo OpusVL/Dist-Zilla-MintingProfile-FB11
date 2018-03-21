@@ -16,6 +16,7 @@ chdir('My-App');
 havedir('lib/My/App');
 havepath('lib/My/App.pm');
 havepath('lib/My/App/Builder.pm');
+havepath('.gitignore');
 
 #ok(system("prove", "-l", 't') == 0);
 
