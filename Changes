@@ -1,5 +1,9 @@
 {{ $NEXT }}
 
+0.016     2018-04-23 13:55:49+01:00 Europe/London
+    - New apps (default profile) now have their PSGI put in bin/ so it is
+      installed by CPAN and thus discoverable.
+
 0.015     2016-06-27 15:48:40+01:00 Europe/London
     - Remove use of signatures feature in minted Controller - it's experimental
 
