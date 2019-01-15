@@ -31,4 +31,5 @@ release:
 	dzil release
 	- docker tag quay.io/opusvl/{{ $dockername }}:latest quay.io/opusvl/{{ $dockername }}:v$(version)
 	- docker push quay.io/opusvl/{{ $dockername }}:v$(version)
-
+{{# I don't know whether to try configuring the quay URLs, or to let anyone who uses this just fix their own Makefile
+}}
