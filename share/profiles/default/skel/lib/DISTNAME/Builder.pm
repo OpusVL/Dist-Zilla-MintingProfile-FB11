@@ -8,6 +8,9 @@ extends 'OpusVL::FB11::Builder';
 
 use Try::Tiny;
 
+# ABSTRACT: Builds {{ $name }} app
+our $VERSION = '0';
+
 override _build_superclasses => sub {
     return ['OpusVL::FB11'];
 };
@@ -51,22 +54,3 @@ sub _setup_static_dir {
 }
 
 1;
-
-=head1 NAME
-
-{{ $name }}::Builder
-
-=head1 DESCRIPTION
-
-=head1 METHODS
-
-=head1 ATTRIBUTES
-
-=head1 LICENSE AND COPYRIGHT
-
-Copyright 2015 OpusVL.
-
-This software is licensed according to the "IP Assignment Schedule" provided with the development project.
-
-=cut
-
