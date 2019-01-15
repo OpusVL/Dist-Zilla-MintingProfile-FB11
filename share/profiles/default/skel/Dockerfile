@@ -15,6 +15,6 @@ RUN echo {{ $dist->name =~ s/-/::/gr }}@$version >> /version
 
 {{ $confname = lc $dist->name =~ s/-/_/gr; '' }}
 
-COPY {{ $confname }}.conf /srv/fb11/{{ $confname }}.conf
-ENV CATALYST_CONFIG /srv/fb11/{{ $confname }}.conf
+COPY {{ $confname }}.yml /srv/fb11/{{ $confname }}.yml
+ENV CATALYST_CONFIG /srv/fb11/{{ $confname }}.yml
 ENV PSGI /opt/perl5/bin/{{ $confname }}.psgi

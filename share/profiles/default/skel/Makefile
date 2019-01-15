@@ -3,8 +3,8 @@
 version = $(shell dzil distversion)
 LIBFILES   = $(shell git ls-files lib)
 BINFILES   = $(shell git ls-files bin script)
-TFILES     = $(shell git ls-files t)
-OTHERFILES = cpanfile {{ lc $dist->name =~ s/-/_/gr }}.conf
+TFILES	   = $(shell git ls-files t)
+OTHERFILES = cpanfile {{ lc $dist->name =~ s/-/_/gr }}.yml
 
 clean:
 	dzil clean
