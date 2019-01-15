@@ -2,6 +2,8 @@ requires "Dist::Zilla" => "5.045";
 requires "Dist::Zilla::Plugin::MungeFile::WithDataSection";
 requires "Dist::Zilla::Plugin::Run::AfterMint";
 requires "Dist::Zilla::Plugin::Git::Init";
+requires "Moose";
+requires "namespace::autoclean";
 
 # The Makefile won't work if you don't have this
 # I'm going to assume you want that.
